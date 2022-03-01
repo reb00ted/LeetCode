@@ -9,20 +9,25 @@
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/104.%20Maximum%20Depth%20of%20Binary%20Tree.java)|
 |116|[Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/116.%20Populating%20Next%20Right%20Pointers%20in%20Each%20Node.java)|
 |131|[Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Backtracking/131.%20Palindrome%20Partitioning.java)|
+|133|[Clone Graph](https://leetcode.com/problems/clone-graph)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/133.%20Clone%20Graph.java)|
 |134|[Gas Station](https://leetcode.com/problems/gas-station)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Greedy/134.%20Gas%20Station.java)|
 |136|[Single Number](https://leetcode.com/problems/single-number)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/136.%20Single%20Number.java)|
 |143|[Reorder List](https://leetcode.com/problems/reorder-list)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/143.%20Reorder%20List.java)|
 |148|[Sort List](https://leetcode.com/problems/sort-list)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Divide%20and%20Conquer/148.%20Sort%20List.java)|
+|165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/String/165.%20Compare%20Version%20Numbers.java)|
+|171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Math/171.%20Excel%20Sheet%20Column%20Number.java)|
 |207|[Course Schedule](https://leetcode.com/problems/course-schedule)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/207.%20Course%20Schedule.java)|
 |210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/210.%20Course%20Schedule%20II.java)|
 |211|[Design Add and Search Words Data Structure](https://leetcode.com/problems/design-add-and-search-words-data-structure)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Design/211.%20Design%20Add%20and%20Search%20Words%20Data%20Structure.java)|
 |221|[Maximal Square](https://leetcode.com/problems/maximal-square)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/221.%20Maximal%20Square.java)|
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/227.%20Basic%20Calculator%20II.java)|
+|228|[Summary Ranges](https://leetcode.com/problems/summary-ranges)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/228.%20Summary%20Ranges.java)|
 |231|[Power of Two](https://leetcode.com/problems/power-of-two)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/231.%20Power%20of%20Two.java)|
 |253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Heap(Priority%20Queue)/253.%20Meeting%20Rooms%20II.java)|
 |258|[Add Digits](https://leetcode.com/problems/add-digits)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Number%20Theory/258.%20Add%20Digits.java)|
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Hash%20Table/290.%20Word%20Pattern.java)|
 |310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/310.%20Minimum%20Height%20Trees.java)|
+|338|[Counting Bits](https://leetcode.com/problems/counting-bits)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/338.%20Counting%20Bits.java)|
 |364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/364.%20Nested%20List%20Weight%20Sum%20II.java)|
 |386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Depth-First%20Search/386.%20Lexicographical%20Numbers.java)|
 |387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Hash%20Table/387.%20First%20Unique%20Character%20in%20a%20String.java)|
@@ -41,6 +46,7 @@
 |568|[Maximum Vacation Days](https://leetcode.com/problems/maximum-vacation-days) 🔒|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/568.%20Maximum%20Vacation%20Days.java)|
 |588|[Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system) 🔒|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Design/588.%20Design%20In-Memory%20File%20System.java)|
 |605|[Can Place Flowers](https://leetcode.com/problems/merge-intervals)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/605.%20Can%20Place%20Flowers.java)|
+|662|[Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/662.%20Maximum%20Width%20of%20Binary%20Tree.java)|
 |701|[Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/701.%20Insert%20into%20a%20Binary%20Search%20Tree.java)|
 |847|[Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/847.%20Shortest%20Path%20Visiting%20All%20Nodes.java)|
 |849|[Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/849.%20Maximize%20Distance%20to%20Closest%20Person.java)|
@@ -58,7 +64,9 @@
 |1026|[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/1026.%20Maximum%20Difference%20Between%20Node%20and%20Ancestor.java)|
 |1032|[Stream of Characters](https://leetcode.com/problems/stream-of-characters)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/String/1032.%20Stream%20of%20Characters.java)|
 |1041|[Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Math/1041.%20Robot%20Bounded%20In%20Circle.java)|
+|1064|[Fixed Point](https://leetcode.com/problems/fixed-point) 🔒|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Binary%20Search/1064.%20Fixed%20Point.java)|
 |1094|[Car Pooling](https://leetcode.com/problems/car-pooling)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Sorting/1094.%20Car%20Pooling.java)|
+|1100|[Find K-Length Substrings With No Repeated Characters](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Sliding%20Window/1100.%20Find%20K-Length%20Substrings%20With%20No%20Repeated%20Characters.java)|
 |1101|[The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Union%20Find/1101.%20The%20Earliest%20Moment%20When%20Everyone%20Become%20Friends.java)|
 |1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/1137.%20N-th%20Tribonacci%20Number.java)|
 |1200|[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/1200.%20Minimum%20Absolute%20Difference.java)|
