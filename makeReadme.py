@@ -10,169 +10,196 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-githubUrl = 'https://github.com'
-githubId = ''
-githubRepository = ''
-
-
-class Solution:
-    def __init__(self, problemNumber, problemTitle, difficulty, solution):
-        self.problemNumber = problemNumber
-        self.problemTitle = problemTitle
+class Problem:
+    def __init__(self, number, title, isPremium, difficulty, url):
+        self.number = number
+        self.title = title
+        self.isPremium = isPremium
         self.difficulty = difficulty
-        self.solution = solution
+        self.url = url
+    
+
+class Data:
+    def __init__(self, problemNumber, problem, codeUrl):
+        self.problemNumber = problemNumber
+        self.problem = problem
+        self.codeUrl = codeUrl
+    
+    @classmethod
+    def parse(cls, line):
+        none, number, title, difficulty, codeUrl, none = line.split('|')
+        number = int(number)
+        problemUrl = title[title.rfind('(') + 1:title.rfind(')')]
+        isPremium = title[-1] == '🔒'
+        title = title[title.find('[') + 1:title.find(']')]
+        codeUrl = codeUrl[codeUrl.find('(') + 1:codeUrl.rfind(')')]
+
+        return cls(number, Problem(number, title, isPremium, difficulty, problemUrl), codeUrl)
+    
+    def __eq__(self, other):
+        if not isinstance(other, Data):
+            return False
+        return str(self) == str(other)
+    
+    def __repr__(self):
+        return f'|{self.problem.number}|[{self.problem.title}]({self.problem.url}){" 🔒" if self.problem.isPremium else ""}|{self.problem.difficulty}|[Java]({self.codeUrl})|'
     
     def __str__(self):
-        return f'|{self.problemNumber}|{self.problemTitle}|{self.difficulty}|{self.solution}|'
+        return f'|{self.problem.number}|[{self.problem.title}]({self.problem.url}){" 🔒" if self.problem.isPremium else ""}|{self.problem.difficulty}|[Java]({self.codeUrl})|'
 
 
-class Code:
-    def __init__(self, problemNumber, problemTitle, solutionUrl):
+class IncompleteData:
+    def __init__(self, problemNumber, codeUrl):
         self.problemNumber = problemNumber
-        self.problemTitle = problemTitle
-        self.isPremium = False
-        self.difficulty = None
-        self.problemUrl = None
-        self.solutionUrl = solutionUrl
+        self.problem = None
+        self.codeUrl = codeUrl
     
-    def setDifficulty(self, difficulty):
-        self.difficulty = difficulty
+    def setProblem(self, problem):
+        self.problem = problem
     
-    def setProblemUrl(self, problemUrl):
-        self.problemUrl = problemUrl
-
-    def setPremium(self, isPremium):
-        self.isPremium = isPremium
-    
-    def toSolution(self):
-        problemTitle = f'[{self.problemTitle}]({self.problemUrl})'
-        if self.isPremium:
-            problemTitle += ' 🔒'
-        solution = f'[Java]({self.solutionUrl})'
-        return Solution(self.problemNumber, problemTitle, self.difficulty, solution)
+    def build(self):
+        if self.problem is None:
+            print(f'{self.problemNumber} has not problem data')
+            exit(0)
+        
+        return Data(self.problemNumber, self.problem, self.codeUrl)
 
 
 class MakeReadme:
     def __init__(self):
-        self.now = datetime.datetime.now().strftime('%Y-%m-%d')
-        self.directory = os.getcwd()
-        self.solutionList = dict()
-        self.codeList = list()
+        self.today = datetime.datetime.now().strftime('%Y-%m-%d')
+        self.githubUrl = 'https://github.com'
+        self.database = dict()
     
-    def make(self):
-        self.readExistingSolutionList()
-        self.collectGithubRepositoryCode()
-        self.collectLeetcodeProblemData()
-        self.updateSolutionList()
+    def make(self, githubId, githubRepository):
+        self.readLocalData(os.getcwd() + '\\data.txt')
+
+        githubDirectoryUrlList = self.collectGithubRepositoryDirectoryURL('/'.join([self.githubUrl, githubId, githubRepository]))
+        incompleteDataList = self.collectGithubRepositoryCode(githubDirectoryUrlList)
+        dataList = self.collectLeetcodeProblemData(incompleteDataList)
+        
+        self.insert(dataList)
+        self.updateLocalData()
         self.updateReadme()
 
 
-    def readExistingSolutionList(self):
-        filePath = self.directory + '\\data.txt'
-
-        if os.path.exists(filePath):
-            file = open(filePath, 'r', encoding='utf-8')
+    def readLocalData(self, path):
+        print('readLocalData ...')
+        if os.path.exists(path):
+            file = open(path, 'r', encoding='utf-8')
             for line in file.readlines():
-                none, problemNumber, problemTitle, difficulty, solution, none = line.split('|')
-                print(problemNumber, problemTitle, difficulty, solution)
-                self.solutionList[int(problemNumber)] = Solution(problemNumber, problemTitle, difficulty, solution)
-        return
+                data = Data.parse(line)
+                self.database[data.problemNumber] = data
 
 
-    def collectGithubRepositoryCode(self):
-        rootURL = '/'.join([githubUrl, githubId, githubRepository])
-        directoryUrlList = self.collectGithubRepositoryDirectoryURL(rootURL)
-
-        for directoryUrl in directoryUrlList:
-            time.sleep(1)
-            resp = requests.get(directoryUrl)
-            if resp.status_code != 200:
-                print(directoryUrl, resp.status_code)
-                continue
-
-            bs = BeautifulSoup(resp.text, 'html.parser')
-            grid = bs.find(attrs={"role": "grid"})
-            codes = grid.find_all(attrs={"data-pjax": "#repo-content-pjax-container"})
-            for code in codes:
-                solutionUrl = githubUrl + code['href']
-                htmlText = code.text
-                
-                problemNumber, problemTitle = htmlText.split(".", 1)
-                problemNumber = int(problemNumber)
-                problemTitle = problemTitle.split(".")[0].strip()
-                if not problemNumber in self.solutionList:
-                    self.codeList.append(Code(problemNumber, problemTitle, solutionUrl))
-
-
-    def collectGithubRepositoryDirectoryURL(self, rootUrl):
+    def collectGithubRepositoryDirectoryURL(self, url):
+        print('collectGihubDirectoryURL ...')
         directoryUrlList = list()
-        resp = requests.get(rootUrl)
+        resp = requests.get(url)
         if resp.status_code != 200:
-            print(rootUrl, resp.status_code)
+            print(url, resp.status_code)
             exit()
         
         bs = BeautifulSoup(resp.text, 'html.parser')
         rows = bs.find_all(attrs={'role': 'row'})
         for row in rows[1:]:
             if row.find(attrs={'aria-label': 'Directory'}):
-                directoryUrlList.append(githubUrl + row.find(attrs={'data-pjax': '#repo-content-pjax-container'})['href'])
-        
+                directoryUrlList.append(self.githubUrl + row.find(attrs={'data-pjax': '#repo-content-pjax-container'})['href'])
         return directoryUrlList
 
 
-    def collectLeetcodeProblemData(self):
+    def collectGithubRepositoryCode(self, githubDirectoryUrlList):
+        print('collectGihubRepositoryCode ...')
+        incompleteDataList = []
+        for githubDirectoryUrl in githubDirectoryUrlList:
+            time.sleep(1)
+            resp = requests.get(githubDirectoryUrl)
+            if resp.status_code != 200:
+                print(githubDirectoryUrl, resp.status_code)
+                continue
+
+            bs = BeautifulSoup(resp.text, 'html.parser')
+            grid = bs.find(attrs={"role": "grid"})
+            codeDatas = grid.find_all(attrs={"data-pjax": "#repo-content-pjax-container"})
+            for codeData in codeDatas:
+                codeUrl = self.githubUrl + codeData['href']
+                htmlText = codeData.text
+                
+                problemNumber, none = htmlText.split(".", 1)
+                problemNumber = int(problemNumber)
+                if problemNumber not in self.database:
+                    incompleteDataList.append(IncompleteData(problemNumber, codeUrl))
+        
+        return incompleteDataList
+
+
+    def collectLeetcodeProblemData(self, incompleteDataList):
+        print('collectLeetcodeProblemData ...')
         driver = webdriver.Chrome()
         driver.get('https://leetcode.com/problemset/all/')
         premium = 'text-brand-orange'
+        result = []
 
-        for code in self.codeList:
+        for incompletData in incompleteDataList:
             textArea = driver.find_element(by=By.CSS_SELECTOR, value='input[type="text"]')
             textArea.clear()
             time.sleep(5)
             textArea = driver.find_element(by=By.CSS_SELECTOR, value='input[type="text"]')
-            textArea.send_keys(code.problemNumber)
+            textArea.send_keys(incompletData.problemNumber)
             time.sleep(5)
 
             row = driver.find_elements(by=By.CSS_SELECTOR, value='div[role="row"]')[2]
             innerHTML = row.get_attribute('innerHTML')
-            if innerHTML.find('Easy') >= 0:
-                code.setDifficulty('Easy')
-            elif innerHTML.find('Medium') >= 0:
-                code.setDifficulty('Medium')
-            elif innerHTML.find('Hard') >= 0:
-                code.setDifficulty('Hard')
+            difficulty = ''
+            if innerHTML.find('Easy') > -1:
+                difficulty = 'Easy'
+            elif innerHTML.find('Medium') > -1:
+                difficulty = 'Medium'
+            elif innerHTML.find('Hard') > -1:
+                difficulty = 'Hard'
             else:
-                code.setDifficulty('몰?루')
+                difficulty = '몰?루'
             
-            if innerHTML.find(premium) >= 0:
-                code.setPremium(True)
+            isPremium = False
+            if innerHTML.find(premium) > -1:
+                isPremium = True
             
-            code.setProblemUrl(row.find_element(by=By.TAG_NAME, value='a').get_attribute('href'))
+            problemUrl = row.find_element(by=By.TAG_NAME, value='a').get_attribute('href')
+            title = row.find_element(by=By.TAG_NAME, value='a').get_attribute('innerHTML')
+            title = title.split('.', 1)[1].strip()
+
+            incompletData.setProblem(Problem(incompletData.problemNumber, title, isPremium, difficulty, problemUrl))
+            result.append(incompletData.build())
 
         driver.quit()
+        return result
+    
+
+    def insert(self, dataList):
+        for data in dataList:
+            self.database[data.problemNumber] = data
 
 
-    def updateSolutionList(self):
-        for code in self.codeList:
-            self.solutionList[code.problemNumber] = code.toSolution()
-
-        file = open('data_' + self.now + '.txt', 'w', encoding='utf-8')
-        for problemNumber in sorted(self.solutionList):
-            file.write(str(self.solutionList[problemNumber]))
+    def updateLocalData(self):
+        print('updateLocalData ...')
+        file = open('data_' + self.today + '.txt', 'w', encoding='utf-8')
+        for problemNumber in sorted(self.database):
+            file.write(str(self.database[problemNumber]))
             file.write('\n')
         
         file.close()
         return
     
     def updateReadme(self):
+        print('updateReadme ...')
         baseTemplate = open('baseTemplate.md', 'r', encoding='utf-8')
-        result = open('README_' + self.now + '.md', 'w', encoding='utf-8')
+        result = open('README_' + self.today + '.md', 'w', encoding='utf-8')
 
         for line in baseTemplate.readlines():
             result.write(line)
         
-        for problemNumber in sorted(self.solutionList):
-            result.write(str(self.solutionList[problemNumber]))
+        for problemNumber in sorted(self.database):
+            result.write(str(self.database[problemNumber]))
             result.write('\n')
         
         baseTemplate.close()
@@ -186,4 +213,4 @@ if __name__ == '__main__':
     
     githubId = sys.argv[1]
     githubRepository = sys.argv[2]
-    MakeReadme().make()
+    MakeReadme().make(githubId, githubRepository)
