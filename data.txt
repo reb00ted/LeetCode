@@ -15,6 +15,7 @@
 |143|[Reorder List](https://leetcode.com/problems/reorder-list)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/143.%20Reorder%20List.java)|
 |148|[Sort List](https://leetcode.com/problems/sort-list)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Divide%20and%20Conquer/148.%20Sort%20List.java)|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/String/165.%20Compare%20Version%20Numbers.java)|
+|169|[Majority Element](https://leetcode.com/problems/majority-element)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Hash%20Table/169.%20Majority%20Element.java)|
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Math/171.%20Excel%20Sheet%20Column%20Number.java)|
 |207|[Course Schedule](https://leetcode.com/problems/course-schedule)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/207.%20Course%20Schedule.java)|
 |210|[Course Schedule II](https://leetcode.com/problems/course-schedule-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/210.%20Course%20Schedule%20II.java)|
@@ -25,6 +26,7 @@
 |231|[Power of Two](https://leetcode.com/problems/power-of-two)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/231.%20Power%20of%20Two.java)|
 |253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Heap(Priority%20Queue)/253.%20Meeting%20Rooms%20II.java)|
 |258|[Add Digits](https://leetcode.com/problems/add-digits)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Number%20Theory/258.%20Add%20Digits.java)|
+|279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/279.%20Perfect%20Squares.java)|
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Hash%20Table/290.%20Word%20Pattern.java)|
 |310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/310.%20Minimum%20Height%20Trees.java)|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/338.%20Counting%20Bits.java)|
@@ -34,8 +36,10 @@
 |388|[Longest Absolute File Path](https://leetcode.com/problems/longest-absolute-file-path)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/388.%20Longest%20Absolute%20File%20Path.java)|
 |389|[Find the Difference](https://leetcode.com/problems/find-the-difference)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Hash%20Table/389.%20Find%20the%20Difference.java)|
 |390|[Elimination Game](https://leetcode.com/problems/elimination-game)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Math/390.%20Elimination%20Game.java)|
+|392|[Is Subsequence](https://leetcode.com/problems/is-subsequence)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Two%20Pointers/392.%20Is%20Subsequence.java)|
 |394|[Decode String](https://leetcode.com/problems/decode-string)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/394.%20Decode%20String.java)|
 |402|[Remove K Digits](https://leetcode.com/problems/remove-k-digits)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/402.%20Remove%20K%20Digits.java)|
+|413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/413.%20Arithmetic%20Slices.java)|
 |421|[Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/421.%20Maximum%20XOR%20of%20Two%20Numbers%20in%20an%20Array.java)|
 |452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Greedy/452.%20Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons.java)|
 |454|[4Sum II](https://leetcode.com/problems/4sum-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Hash%20Table/454.%204Sum%20II.java)|
@@ -48,6 +52,8 @@
 |605|[Can Place Flowers](https://leetcode.com/problems/merge-intervals)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/605.%20Can%20Place%20Flowers.java)|
 |662|[Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/662.%20Maximum%20Width%20of%20Binary%20Tree.java)|
 |701|[Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/701.%20Insert%20into%20a%20Binary%20Search%20Tree.java)|
+|740|[Delete and Earn](https://leetcode.com/problems/delete-and-earn)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/740.%20Delete%20and%20Earn.java)|
+|799|[Champagne Tower](https://leetcode.com/problems/champagne-tower)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/799.%20Champagne%20Tower.java)|
 |847|[Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/847.%20Shortest%20Path%20Visiting%20All%20Nodes.java)|
 |849|[Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/849.%20Maximize%20Distance%20to%20Closest%20Person.java)|
 |875|[Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Binary%20Search/875.%20Koko%20Eating%20Bananas.java)|
@@ -75,7 +81,9 @@
 |1291|[Sequential Digits](https://leetcode.com/problems/sequential-digits)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Enumeration/1291.%20Sequential%20Digits.java)|
 |1305|[All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Depth-First%20Search/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees.java)|
 |1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Breadth-First%20Search/1345.%20Jump%20Game%20IV.java)|
+|1359|[Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Math/1359.%20Count%20All%20Valid%20Pickup%20and%20Delivery%20Options.java)|
 |1429|[First Unique Number](https://leetcode.com/problems/first-unique-number) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Design/1429.%20First%20Unique%20Number.java)|
+|1490|[Clone N-ary Tree](https://leetcode.com/problems/clone-n-ary-tree) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/1490.%20Clone%20N-ary%20Tree.java)|
 |1510|[Stone Game IV](https://leetcode.com/problems/stone-game-iv)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/1510.%20Stone%20Game%20IV.java)|
 |1602|[Find Nearest Right Node in Binary Tree](https://leetcode.com/problems/find-nearest-right-node-in-binary-tree) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Breadth-First%20Search/1602.%20Find%20Nearest%20Right%20Node%20in%20Binary%20Tree.java)|
 |1672|[Richest Customer Wealth](https://leetcode.com/problems/richest-customer-wealth)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/1672.%20Richest%20Customer%20Wealth.java)|
