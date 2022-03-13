@@ -5,12 +5,18 @@
 
 |#|Title|Difficulty|Solution|
 |---|---|---|---|
+|2|[Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/2.%20Add%20Two%20Numbers.java)|
 |8|[String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/String/8.%20String%20to%20Integer%20(atoi).java)|
+|20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/20.%20Valid%20Parentheses.java)|
+|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/21.%20Merge%20Two%20Sorted%20Lists.java)|
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/24.%20Swap%20Nodes%20in%20Pairs.java)|
+|39|[Combination Sum](https://leetcode.com/problems/combination-sum)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Backtracking/39.%20Combination%20Sum.java)|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/56.%20Merge%20Intervals.java)|
+|61|[Rotate List](https://leetcode.com/problems/rotate-list)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/61.%20Rotate%20List.java)|
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/67.%20Add%20Binary.java)|
 |78|[Subsets](https://leetcode.com/problems/subsets)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Backtracking/78.%20Subsets.java)|
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Two%20Pointers/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II.java)|
+|82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/82.%20Remove%20Duplicates%20from%20Sorted%20List%20II.java)|
 |84|[Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Divide%20and%20Conquer/84.%20Largest%20Rectangle%20in%20Histogram.java)|
 |98|[Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/98.%20Validate%20Binary%20Search%20Tree.java)|
 |104|[Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/104.%20Maximum%20Depth%20of%20Binary%20Tree.java)|
@@ -19,6 +25,8 @@
 |133|[Clone Graph](https://leetcode.com/problems/clone-graph)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/133.%20Clone%20Graph.java)|
 |134|[Gas Station](https://leetcode.com/problems/gas-station)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Greedy/134.%20Gas%20Station.java)|
 |136|[Single Number](https://leetcode.com/problems/single-number)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/136.%20Single%20Number.java)|
+|138|[Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/138.%20Copy%20List%20with%20Random%20Pointer.java)|
+|141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/141.%20Linked%20List%20Cycle.java)|
 |143|[Reorder List](https://leetcode.com/problems/reorder-list)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/143.%20Reorder%20List.java)|
 |148|[Sort List](https://leetcode.com/problems/sort-list)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Divide%20and%20Conquer/148.%20Sort%20List.java)|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/String/165.%20Compare%20Version%20Numbers.java)|
@@ -85,6 +93,7 @@
 |1200|[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/1200.%20Minimum%20Absolute%20Difference.java)|
 |1217|[Minimum Cost to Move Chips to The Same Position](https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tricky/1217.%20Minimum%20Cost%20to%20Move%20Chips%20to%20The%20Same%20Position.java)|
 |1244|[Design A Leaderboard](https://leetcode.com/problems/design-a-leaderboard) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Design/1244.%20Design%20A%20Leaderboard.java)|
+|1288|[Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Greedy/1288.%20Remove%20Covered%20Intervals.java)|
 |1291|[Sequential Digits](https://leetcode.com/problems/sequential-digits)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Enumeration/1291.%20Sequential%20Digits.java)|
 |1305|[All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Depth-First%20Search/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees.java)|
 |1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Breadth-First%20Search/1345.%20Jump%20Game%20IV.java)|
