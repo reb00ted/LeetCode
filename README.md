@@ -14,6 +14,7 @@
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/56.%20Merge%20Intervals.java)|
 |61|[Rotate List](https://leetcode.com/problems/rotate-list)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/61.%20Rotate%20List.java)|
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/67.%20Add%20Binary.java)|
+|71|[Simplify Path](https://leetcode.com/problems/simplify-path)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/71.%20Simplify%20Path.java)|
 |78|[Subsets](https://leetcode.com/problems/subsets)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Backtracking/78.%20Subsets.java)|
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Two%20Pointers/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II.java)|
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/82.%20Remove%20Duplicates%20from%20Sorted%20List%20II.java)|
@@ -29,6 +30,7 @@
 |141|[Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/141.%20Linked%20List%20Cycle.java)|
 |143|[Reorder List](https://leetcode.com/problems/reorder-list)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/143.%20Reorder%20List.java)|
 |148|[Sort List](https://leetcode.com/problems/sort-list)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Divide%20and%20Conquer/148.%20Sort%20List.java)|
+|156|[Binary Tree Upside Down](https://leetcode.com/problems/binary-tree-upside-down) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/156.%20Binary%20Tree%20Upside%20Down.java)|
 |165|[Compare Version Numbers](https://leetcode.com/problems/compare-version-numbers)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/String/165.%20Compare%20Version%20Numbers.java)|
 |169|[Majority Element](https://leetcode.com/problems/majority-element)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Hash%20Table/169.%20Majority%20Element.java)|
 |171|[Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Math/171.%20Excel%20Sheet%20Column%20Number.java)|
@@ -39,11 +41,13 @@
 |227|[Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/227.%20Basic%20Calculator%20II.java)|
 |228|[Summary Ranges](https://leetcode.com/problems/summary-ranges)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/228.%20Summary%20Ranges.java)|
 |231|[Power of Two](https://leetcode.com/problems/power-of-two)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/231.%20Power%20of%20Two.java)|
+|250|[Count Univalue Subtrees](https://leetcode.com/problems/count-univalue-subtrees) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/250.%20Count%20Univalue%20Subtrees.java)|
 |253|[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Heap(Priority%20Queue)/253.%20Meeting%20Rooms%20II.java)|
 |258|[Add Digits](https://leetcode.com/problems/add-digits)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Number%20Theory/258.%20Add%20Digits.java)|
 |279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/279.%20Perfect%20Squares.java)|
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Hash%20Table/290.%20Word%20Pattern.java)|
 |310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/310.%20Minimum%20Height%20Trees.java)|
+|316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/316.%20Remove%20Duplicate%20Letters.java)|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/338.%20Counting%20Bits.java)|
 |364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/364.%20Nested%20List%20Weight%20Sum%20II.java)|
 |386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Depth-First%20Search/386.%20Lexicographical%20Numbers.java)|
@@ -56,9 +60,11 @@
 |402|[Remove K Digits](https://leetcode.com/problems/remove-k-digits)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/402.%20Remove%20K%20Digits.java)|
 |413|[Arithmetic Slices](https://leetcode.com/problems/arithmetic-slices)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/413.%20Arithmetic%20Slices.java)|
 |421|[Maximum XOR of Two Numbers in an Array](https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/421.%20Maximum%20XOR%20of%20Two%20Numbers%20in%20an%20Array.java)|
+|444|[Sequence Reconstruction](https://leetcode.com/problems/sequence-reconstruction) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/444.%20Sequence%20Reconstruction.java)|
 |452|[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Greedy/452.%20Minimum%20Number%20of%20Arrows%20to%20Burst%20Balloons.java)|
 |454|[4Sum II](https://leetcode.com/problems/4sum-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Hash%20Table/454.%204Sum%20II.java)|
 |476|[Number Complement](https://leetcode.com/problems/number-complement)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/476.%20Number%20Complement.java)|
+|499|[The Maze III](https://leetcode.com/problems/the-maze-iii) 🔒|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/499.%20The%20Maze%20III.java)|
 |509|[Fibonacci Number](https://leetcode.com/problems/fibonacci-number)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/509.%20Fibonacci%20Number.java)|
 |520|[Detect Capital](https://leetcode.com/problems/detect-capital)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/String/520.%20Detect%20Capital.java)|
 |567|[Permutation in String](https://leetcode.com/problems/permutation-in-string)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Sliding%20Window/567.%20Permutation%20in%20String.java)|
@@ -76,6 +82,7 @@
 |878|[Nth Magical Number](https://leetcode.com/problems/nth-magical-number)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Math/878.%20Nth%20Magical%20Number.java)|
 |902|[Numbers At Most N Given Digit Set](https://leetcode.com/problems/numbers-at-most-n-given-digit-set)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/902.%20Numbers%20At%20Most%20N%20Given%20Digit%20Set.java)|
 |941|[Valid Mountain Array](https://leetcode.com/problems/valid-mountain-array)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/941.%20Valid%20Mountain%20Array.java)|
+|946|[Validate Stack Sequences](https://leetcode.com/problems/validate-stack-sequences)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/946.%20Validate%20Stack%20Sequences.java)|
 |973|[K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/973.%20K%20Closest%20Points%20to%20Origin.java)|
 |997|[Find the Town Judge](https://leetcode.com/problems/find-the-town-judge)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/997.%20Find%20the%20Town%20Judge.java)|
 |1009|[Complement of Base 10 Integer](https://leetcode.com/problems/complement-of-base-10-integer)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/1009.%20Complement%20of%20Base%2010%20Integer.java)|
