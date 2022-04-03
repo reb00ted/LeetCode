@@ -10,11 +10,13 @@
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/20.%20Valid%20Parentheses.java)|
 |21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/21.%20Merge%20Two%20Sorted%20Lists.java)|
 |24|[Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/24.%20Swap%20Nodes%20in%20Pairs.java)|
+|31|[Next Permutation](https://leetcode.com/problems/next-permutation)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/31.%20Next%20Permutation.java)|
 |39|[Combination Sum](https://leetcode.com/problems/combination-sum)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Backtracking/39.%20Combination%20Sum.java)|
 |56|[Merge Intervals](https://leetcode.com/problems/merge-intervals)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/56.%20Merge%20Intervals.java)|
 |61|[Rotate List](https://leetcode.com/problems/rotate-list)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/61.%20Rotate%20List.java)|
 |67|[Add Binary](https://leetcode.com/problems/add-binary)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/67.%20Add%20Binary.java)|
 |71|[Simplify Path](https://leetcode.com/problems/simplify-path)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/71.%20Simplify%20Path.java)|
+|74|[Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Binary%20Search/74.%20Search%20a%202D%20Matrix.java)|
 |78|[Subsets](https://leetcode.com/problems/subsets)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Backtracking/78.%20Subsets.java)|
 |80|[Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Two%20Pointers/80.%20Remove%20Duplicates%20from%20Sorted%20Array%20II.java)|
 |82|[Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Linked%20List/82.%20Remove%20Duplicates%20from%20Sorted%20List%20II.java)|
@@ -47,8 +49,10 @@
 |279|[Perfect Squares](https://leetcode.com/problems/perfect-squares)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/279.%20Perfect%20Squares.java)|
 |290|[Word Pattern](https://leetcode.com/problems/word-pattern)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Hash%20Table/290.%20Word%20Pattern.java)|
 |310|[Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Graph/310.%20Minimum%20Height%20Trees.java)|
+|311|[Sparse Matrix Multiplication](https://leetcode.com/problems/sparse-matrix-multiplication) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Matrix/311.%20Sparse%20Matrix%20Multiplication.java)|
 |316|[Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/316.%20Remove%20Duplicate%20Letters.java)|
 |338|[Counting Bits](https://leetcode.com/problems/counting-bits)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Bit%20Manipulation/338.%20Counting%20Bits.java)|
+|344|[Reverse String](https://leetcode.com/problems/reverse-string)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Two%20Pointers/344.%20Reverse%20String.java)|
 |364|[Nested List Weight Sum II](https://leetcode.com/problems/nested-list-weight-sum-ii) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Recursion%2C%20Stack/364.%20Nested%20List%20Weight%20Sum%20II.java)|
 |386|[Lexicographical Numbers](https://leetcode.com/problems/lexicographical-numbers)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Depth-First%20Search/386.%20Lexicographical%20Numbers.java)|
 |387|[First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Hash%20Table/387.%20First%20Unique%20Character%20in%20a%20String.java)|
@@ -72,8 +76,11 @@
 |588|[Design In-Memory File System](https://leetcode.com/problems/design-in-memory-file-system) 🔒|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Design/588.%20Design%20In-Memory%20File%20System.java)|
 |605|[Can Place Flowers](https://leetcode.com/problems/merge-intervals)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/605.%20Can%20Place%20Flowers.java)|
 |662|[Maximum Width of Binary Tree](https://leetcode.com/problems/maximum-width-of-binary-tree)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/662.%20Maximum%20Width%20of%20Binary%20Tree.java)|
+|680|[Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/String/680.%20Valid%20Palindrome%20II.java)|
 |701|[Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/701.%20Insert%20into%20a%20Binary%20Search%20Tree.java)|
+|704|[Binary Search](https://leetcode.com/problems/binary-search)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Binary%20Search/704.%20Binary%20Search.java)|
 |740|[Delete and Earn](https://leetcode.com/problems/delete-and-earn)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/740.%20Delete%20and%20Earn.java)|
+|763|[Partition Labels](https://leetcode.com/problems/partition-labels)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Two%20Pointers/763.%20Partition%20Labels.java)|
 |799|[Champagne Tower](https://leetcode.com/problems/champagne-tower)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/799.%20Champagne%20Tower.java)|
 |847|[Shortest Path Visiting All Nodes](https://leetcode.com/problems/shortest-path-visiting-all-nodes)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/847.%20Shortest%20Path%20Visiting%20All%20Nodes.java)|
 |849|[Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/849.%20Maximize%20Distance%20to%20Closest%20Person.java)|
@@ -90,12 +97,15 @@
 |1015|[Smallest Integer Divisible by K](https://leetcode.com/problems/smallest-integer-divisible-by-k)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Math/1015.%20Smallest%20Integer%20Divisible%20by%20K.java)|
 |1022|[Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/1022.%20Sum%20of%20Root%20To%20Leaf%20Binary%20Numbers.java)|
 |1026|[Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tree/1026.%20Maximum%20Difference%20Between%20Node%20and%20Ancestor.java)|
+|1029|[Two City Scheduling](https://leetcode.com/problems/two-city-scheduling)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Greedy/1029.%20Two%20City%20Scheduling.java)|
 |1032|[Stream of Characters](https://leetcode.com/problems/stream-of-characters)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/String/1032.%20Stream%20of%20Characters.java)|
 |1041|[Robot Bounded In Circle](https://leetcode.com/problems/robot-bounded-in-circle)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Math/1041.%20Robot%20Bounded%20In%20Circle.java)|
+|1057|[Campus Bikes](https://leetcode.com/problems/campus-bikes) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Sorting/1057.%20Campus%20Bikes.java)|
 |1064|[Fixed Point](https://leetcode.com/problems/fixed-point) 🔒|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Binary%20Search/1064.%20Fixed%20Point.java)|
 |1094|[Car Pooling](https://leetcode.com/problems/car-pooling)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Sorting/1094.%20Car%20Pooling.java)|
 |1100|[Find K-Length Substrings With No Repeated Characters](https://leetcode.com/problems/find-k-length-substrings-with-no-repeated-characters) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Sliding%20Window/1100.%20Find%20K-Length%20Substrings%20With%20No%20Repeated%20Characters.java)|
 |1101|[The Earliest Moment When Everyone Become Friends](https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Union%20Find/1101.%20The%20Earliest%20Moment%20When%20Everyone%20Become%20Friends.java)|
+|1102|[Path With Maximum Minimum Value](https://leetcode.com/problems/path-with-maximum-minimum-value) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Binary%20Search/1102.%20Path%20With%20Maximum%20Minimum%20Value.java)|
 |1137|[N-th Tribonacci Number](https://leetcode.com/problems/n-th-tribonacci-number)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Dynamic%20Programming/1137.%20N-th%20Tribonacci%20Number.java)|
 |1200|[Minimum Absolute Difference](https://leetcode.com/problems/minimum-absolute-difference)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Array/1200.%20Minimum%20Absolute%20Difference.java)|
 |1217|[Minimum Cost to Move Chips to The Same Position](https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Tricky/1217.%20Minimum%20Cost%20to%20Move%20Chips%20to%20The%20Same%20Position.java)|
@@ -103,6 +113,7 @@
 |1288|[Remove Covered Intervals](https://leetcode.com/problems/remove-covered-intervals)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Greedy/1288.%20Remove%20Covered%20Intervals.java)|
 |1291|[Sequential Digits](https://leetcode.com/problems/sequential-digits)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Enumeration/1291.%20Sequential%20Digits.java)|
 |1305|[All Elements in Two Binary Search Trees](https://leetcode.com/problems/all-elements-in-two-binary-search-trees)|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Depth-First%20Search/1305.%20All%20Elements%20in%20Two%20Binary%20Search%20Trees.java)|
+|1337|[The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix)|Easy|[Java](https://github.com/reb00ted/LeetCode/blob/main/Binary%20Search/1337.%20The%20K%20Weakest%20Rows%20in%20a%20Matrix.java)|
 |1345|[Jump Game IV](https://leetcode.com/problems/jump-game-iv)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Breadth-First%20Search/1345.%20Jump%20Game%20IV.java)|
 |1359|[Count All Valid Pickup and Delivery Options](https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options)|Hard|[Java](https://github.com/reb00ted/LeetCode/blob/main/Math/1359.%20Count%20All%20Valid%20Pickup%20and%20Delivery%20Options.java)|
 |1429|[First Unique Number](https://leetcode.com/problems/first-unique-number) 🔒|Medium|[Java](https://github.com/reb00ted/LeetCode/blob/main/Design/1429.%20First%20Unique%20Number.java)|

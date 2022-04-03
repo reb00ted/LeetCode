@@ -50,7 +50,7 @@ class TestMakeReadme(unittest.TestCase):
         self.assertEqual(data.codeUrl, 'dummyUrl')
 
 
-    # github scraping 검증
+    # github scraping 검증(카테고리 개수)
     def test_github_scraping(self):
         # given
         makeReadme = MakeReadme()
@@ -61,10 +61,10 @@ class TestMakeReadme(unittest.TestCase):
         result = makeReadme.collectGithubRepositoryDirectoryURL(url)
 
         # then
-        self.assertEqual(len(result), 26)
+        self.assertEqual(len(result), 27)
 
 
-    # github scraping 검증2
+    # github scraping 검증('Design' 카테고리의 솔루션 개수)
     def test_github_scraping2(self):
         # given
         makeReadme = MakeReadme()
@@ -78,7 +78,7 @@ class TestMakeReadme(unittest.TestCase):
         self.assertEqual(len(incompleteDataList), 4)
 
     
-    # github scraping 검증3
+    # github scraping 검증('Enumeration' 카테고리 스크레이핑 결과 비교)
     def test_github_scraping3(self):
         # given
         makeReadme = MakeReadme()
@@ -94,7 +94,7 @@ class TestMakeReadme(unittest.TestCase):
         self.assertEqual(incompleteData.codeUrl, 'https://github.com/reb00ted/LeetCode/blob/main/Enumeration/1291.%20Sequential%20Digits.java')
 
 
-    # LeetCode scraping 검증
+    # LeetCode scraping 검증(310번 문제 스크레이핑 결과 비교)
     def test_leetcode_scraping(self):
         # given
         makeReadme = MakeReadme()
