@@ -61,7 +61,7 @@ class TestMakeReadme(unittest.TestCase):
         result = makeReadme.collectGithubRepositoryDirectoryURL(url)
 
         # then
-        self.assertEqual(len(result), 27)
+        self.assertEqual(len(result), 28)
 
 
     # github scraping 검증('Design' 카테고리의 솔루션 개수)

@@ -128,6 +128,7 @@ class MakeReadme:
                 problemNumber, none = htmlText.split(".", 1)
                 problemNumber = int(problemNumber)
                 if problemNumber not in self.database:
+                    print(problemNumber)
                     incompleteDataList.append(IncompleteData(problemNumber, codeUrl))
         
         return incompleteDataList
